@@ -1,3 +1,3 @@
-def solve(a): # solve ÇÔ¼ö »ı¼º
-    ans = sum(a) # ans´Â sum(a)
-    return ans # ans ¹İÈ¯
+def solve(a): # solve í•¨ìˆ˜ ìƒì„±
+    ans = sum(a) # ansì˜ ê°’ sum(a)ë¡œ ì´ˆê¸°í™”
+    return ans # ans ë°˜í™˜
