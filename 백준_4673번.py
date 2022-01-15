@@ -1,9 +1,9 @@
-def d(n) : # ÇÔ¼ö »ı¼º
-    n = n + sum(map(int, str(n))) # map(int, str(n)) = [int(n) for i in str(n)]
-    return n # °ª ¹İÈ¯
-NoSelfNumber = set() # NoSelfNumber¶ó´Â ÁıÇÕ »ı¼º
-for i in range(1, 10001) : # ¹İº¹¹® for
-    NoSelfNumber.add(d(i)) # ÁıÇÕÀº Áßº¹µÈ ¿ø¼Ò¸¦ °®´Â °ÍÀÌ ºÒ°¡´É
-for i in range(1, 10001) : # ¹İº¹¹® for
-    if i not in NoSelfNumber : # Á¶°Ç¹® if
-        print(i) # Ãâ·Â
+def d(n) : # í•¨ìˆ˜ ìƒì„±
+    n = n + sum(list(map(int, str(n)))) # list(map(int, str(n))) -> nì˜ ê°’ì„ strí˜•ìœ¼ë¡œ ë°”ê¾¸ì–´ í•œ ê¸€ìì”© intí˜•ìœ¼ë¡œ ë‹¤ì‹œ ë°”ê¿” listì— ë„£ìŒ
+    return n # ê°’ ë°˜í™˜
+NoSelfNumber = set() # NoSelfNumberë¼ëŠ” ì§‘í•© ìƒì„±
+for i in range(1, 10001) : # ë°˜ë³µë¬¸ for
+    NoSelfNumber.add(d(i)) # ì§‘í•©ì€ ì¤‘ë³µëœ ì›ì†Œë¥¼ ê°–ëŠ” ê²ƒì´ ë¶ˆê°€ëŠ¥
+for i in range(1, 10001) : # ë°˜ë³µë¬¸ for
+    if i not in NoSelfNumber : # ì¡°ê±´ë¬¸ if
+        print(i) # ì¶œë ¥
