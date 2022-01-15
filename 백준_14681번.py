@@ -1,6 +1,6 @@
-x = int(input()) # °ª ´ëÀÔ
-y = int(input()) 
-if x > 0 and y > 0 : # Á¶°Ç¹® if, elif, else
+x = int(input()) # ê°’ ëŒ€ì…
+y = int(input()) # ê°’ ëŒ€ì…
+if x > 0 and y > 0 : # ì¡°ê±´ë¬¸ if, elif, else
     print("1")
 elif x > 0 and y < 0 :
     print("4")
