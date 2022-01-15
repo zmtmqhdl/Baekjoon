@@ -1,9 +1,9 @@
-a, b = map(int, input().split()) # °ª ´ëÀÔ
-if b - 45 < 0 : # Á¶°Ç¹® if, else
+a, b = map(int, input().split()) # ê°’ ëŒ€ì…
+if b - 45 < 0 : # ì¡°ê±´ë¬¸ if, else
     b += 15 # b = b + 15
     a -= 1 # a = a - 1
-    if a < 0 :
+    if a < 0 : # ì¡°ê±´ë¬¸ if
         a = 23
 else :
-    b -=45
-print(a, b) # Ãâ·Â
+    b -= 45
+print(a, b) # ì¶œë ¥
