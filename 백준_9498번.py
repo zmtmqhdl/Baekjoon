@@ -1,6 +1,6 @@
-score = int(input()) # °ª ´ëÀÔ
-if score >= 90 : # Á¶°Ç¹® if, elif, else
-    print("A") # Ãâ·Â
+score = int(input()) # ê°’ ëŒ€ìž…
+if score >= 90 : # ì¡°ê±´ë¬¸ if, elif, else
+    print("A") # ì¶œë ¥
 elif score >= 80 : 
     print("B")
 elif score >= 70 :
