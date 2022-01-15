@@ -1,6 +1,5 @@
-n = int(input()) # °ª ´ëÀÔ
-result = 0 # °á°ú°ª ÃÊ±âÈ­
-for i in range(1, n + 1) : # ¹İº¹¹® forÀÇ ¹üÀ§ (½ÃÀÛÇÏ°í ½ÍÀº °ª, ³¡³»°í ½ÍÀº °ª + 1)
+n = int(input()) # ê°’ ëŒ€ì…
+result = 0 # ê²°ê³¼ê°’ ì´ˆê¸°í™”
+for i in range(1, n + 1) : # ë°˜ë³µë¬¸ forì˜ ë²”ìœ„ (ì‹œì‘í•˜ê³  ì‹¶ì€ ê°’, ëë‚´ê³  ì‹¶ì€ ê°’ + 1)
     result += i # result = result + i
-    
-print(result) # Ãâ·Â
+print(result) # ì¶œë ¥
