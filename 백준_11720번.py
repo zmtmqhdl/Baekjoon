@@ -1,4 +1,11 @@
-n = int(input()) # ê°’ ëŒ€ì…
-i = int(input()) # ê°’ ëŒ€ì…
-data = list(map(int, str(i))) # list(map(int, str(i))) -> iì˜ ê°’ì„ strí˜•ìœ¼ë¡œ ë°”ê¾¸ì–´ í•œ ë¬¸ìì”© intí˜•ìœ¼ë¡œ ë‹¤ì‹œ ë°”ê¿” listì— ë„£ìŒ
-print(sum(data)) # dataë¼ëŠ” listì— ìˆëŠ” ì›ì†Œë“¤ì˜ í•©ì„ ì¶œë ¥
+n = int(input()) # °ª ´ëÀÔ
+def move(n, a, b, c) : # mÇÔ¼ö ¼±¾ğ
+                       # nÀº ¿Å°Ü¾ßÇÏ´Â ¼ö, a´Â 1¹øÅ¾, b´Â 2¹øÅ¾, c´Â 3¹øÅ¾
+    if n == 1 : # Á¶°Ç¹® if -> ÀåÆÇÀÌ 1°³ÀÎ °æ¿ì´Â ¹Ù·Î 1¹øÅ¾¿¡¼­ 3¹øÅ¾À¸·Î ÀÌµ¿
+        print(a, c) # Ãâ·Â
+    else :
+        move(n - 1, a, c, b) # moveÇÔ¼ö ½ÇÇà
+        print(a, c) # Ãâ·Â
+        move(n - 1, b, a, c) # moveÇÔ¼ö ½ÇÇà
+print(2 ** n - 1) # Ãâ·Â
+move(n, 1, 2, 3) # ÇÔ¼ö ½ÇÇà
