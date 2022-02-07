@@ -1,12 +1,12 @@
-x_list = [] # x°ªµéÀ» ¼öÁıÇÒ x_list¶ó´Â list»ı¼º
-y_list = [] # y°ªµéÀ» ¼öÁıÇÒ y_list¶ó´Â list»ı¼º
-for _ in range(3) : # ¹İº¹¹® for
-    x, y = map(int, input().split()) # °ª ´ëÀÔ
-    x_list.append(x) # x_list¶ó´Â list¿¡ x°ªÀ» ¿ø¼Ò·Î Ãß°¡
-    y_list.append(y) # y_list¶ó´Â list¿¡ y°ªÀ» ¿ø¼Ò·Î Ãß°¡
-for i in range(3) : # ¹İº¹¹® for
-    if x_list.count(x_list[i]) == 1: # °¡Á¤¹® if -> count¸¦ »ç¿ëÇÏ¿© x_list°¡ °¡Áø ¿ø¼Ò Áß °³¼ö°¡ 1°³ÀÎ °ÍÀ» Ã£¾Æ³¿
+x_list = [] # xê°’ë“¤ì„ ìˆ˜ì§‘í•  x_listë¼ëŠ” listìƒì„±
+y_list = [] # yê°’ë“¤ì„ ìˆ˜ì§‘í•  y_listë¼ëŠ” listìƒì„±
+for _ in range(3) : # ë°˜ë³µë¬¸ for
+    x, y = map(int, input().split()) # ê°’ ëŒ€ì…
+    x_list.append(x) # x_listë¼ëŠ” listì— xê°’ì„ ì›ì†Œë¡œ ì¶”ê°€
+    y_list.append(y) # y_listë¼ëŠ” listì— yê°’ì„ ì›ì†Œë¡œ ì¶”ê°€
+for i in range(3) : # ë°˜ë³µë¬¸ for
+    if x_list.count(x_list[i]) == 1: # ì¡°ê±´ë¬¸ if -> countë¥¼ ì‚¬ìš©í•˜ì—¬ x_listê°€ ê°€ì§„ ì›ì†Œ ì¤‘ ê°œìˆ˜ê°€ 1ê°œì¸ ê²ƒì„ ì°¾ì•„ëƒ„
         result_x = x_list[i]
-    if y_list.count(y_list[i]) == 1: # °¡Á¤¹® if -> count¸¦ »ç¿ëÇÏ¿© y_list°¡ °¡Áø ¿ø¼Ò Áß °³¼ö°¡ 1°³ÀÎ °ÍÀ» Ã£¾Æ³¿
+    if y_list.count(y_list[i]) == 1: # ì¡°ê±´ë¬¸ if -> countë¥¼ ì‚¬ìš©í•˜ì—¬ y_listê°€ ê°€ì§„ ì›ì†Œ ì¤‘ ê°œìˆ˜ê°€ 1ê°œì¸ ê²ƒì„ ì°¾ì•„ëƒ„
         result_y = y_list[i]
-print(result_x, result_y) # Ãâ·Â
+print(result_x, result_y) # ì¶œë ¥
