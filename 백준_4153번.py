@@ -1,10 +1,10 @@
-while True : # ¹İº¹¹® while -> False°¡ ¹İÈ¯µÉ ¶§±îÁö ¹İº¹
-    a = list(map(int, input().split())) # °ª ´ëÀÔ
-    high = max(a) # °¡Àå Å« °ªÀ» high¶ó´Â º¯¼ö·Î ÁöÁ¤
-    if sum(a) == 0 : # Á¶°Ç¹® if -> 0 0 0ÀÌ ÀÔ·Â‰çÀ» °æ¿ì
-        break # ÁßÁö
-    a.remove(high) # remove¸¦ »ç¿ëÇØ high°ªÀ» a¶ó´Â list¿¡¼­ Á¦°Å
-    if high ** 2 == a[0] ** 2 + a[1] ** 2 : # ÇÇÅ¸°í¶ó½ºÀÇ Á¤¸® ¿¬»ê
-        print("right") # Ãâ·Â
+while True : # ë°˜ë³µë¬¸ while -> Falseê°€ ë°˜í™˜ë  ë•Œê¹Œì§€ ë°˜ë³µ
+    a = list(map(int, input().split())) # ê°’ ëŒ€ì…
+    high = max(a) # ê°€ì¥ í° ê°’ì„ highë¼ëŠ” ë³€ìˆ˜ë¡œ ì§€ì •
+    if sum(a) == 0 : # ì¡°ê±´ë¬¸ if -> 0 0 0ì´ ì…ë ¥ëœ ê²½ìš°
+        break # ì¤‘ì§€
+    a.remove(high) # removeë¥¼ ì‚¬ìš©í•´ highê°’ì„ aë¼ëŠ” listì—ì„œ ì œê±°
+    if high ** 2 == a[0] ** 2 + a[1] ** 2 : # í”¼íƒ€ê³ ë¼ìŠ¤ì˜ ì •ë¦¬ ì—°ì‚°
+        print("right") # ì¶œë ¥
     else :
-        print("wrong") # Ãú·Â
+        print("wrong") # ì¸¨ë ¥
