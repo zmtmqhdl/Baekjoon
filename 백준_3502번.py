@@ -1,6 +1,6 @@
-data = [] # ºó list »ı¼º
-for _ in range(10) : # ¹İº¹¹® for
-    n = int(input()) # °ª ´ëÀÔ
-    if n % 42 not in data : # data¶ó´Â list¿¡ n % 42ÀÇ °ªÀÌ ¾ø´Ù¸é 
-        data.append(n % 42) # n % 42ÀÇ °ªÀ» data¶ó´Â list¿¡ ´ëÀÔ
-print(len(data)) # data¶ó´Â list ¾È¿¡ ´ã°Ü ÀÖ´Â ¿ø¼ÒÀÇ °¹¼ö Ãâ·Â
+data = [] # ë¹ˆ list ìƒì„±
+for _ in range(10) : # ë°˜ë³µë¬¸ for
+    n = int(input()) # ê°’ ëŒ€ì…
+    if n % 42 not in data : # ì¡°ê±´ë¬¸ if -> dataë¼ëŠ” listì— n % 42ì˜ ê°’ì´ ì—†ë‹¤ë©´ 
+        data.append(n % 42) # n % 42ì˜ ê°’ì„ dataë¼ëŠ” listì— ëŒ€ì…
+print(len(data)) # dataë¼ëŠ” list ì•ˆì— ë‹´ê²¨ ìˆëŠ” ì›ì†Œì˜ ê°¯ìˆ˜ ì¶œë ¥
