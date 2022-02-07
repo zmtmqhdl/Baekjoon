@@ -1,21 +1,21 @@
-def isPrime() : # ÇÔ¼ö »ý¼º
-    data = [False, False] + [True] * 9999 # data¶ó´Â list »ý¼º
-                                          # 0, 1¹øÂ° indexÀÇ °ªÀº FalseÀÌ°í ±× ÀÌÈÄÀÇ °ªµéÀº True
-                                          # dataÀÇ ÇØ´ç ÀÎµ¦½º °ªÀÌ TrueÀÌ¸é ¼Ò¼ö, FalseÀÌ¸é ¼Ò¼ö°¡ ¾Æ´Ô
-    for i in range(2, int(10001 ** 0.5) + 1) : # ¹Ýº¹¹® for -> 10001 ** 0.5´Â Á¦°ö±Ù
-        if data[i] == True : # Á¶°Ç¹® if -> ¼Ò¼ö ÆÇº°
-            for j in range(2 * i, 10001, i) : # ¹Ýº¹¹® for -> 2 * iºÎÅÍ 10001±îÁö i¸¦ °£°ÝÀ¸·Î j¿¡ Â÷·Ê´ë·Î ´ëÀÔ
+def isPrime() : # í•¨ìˆ˜ ìƒì„±
+    data = [False, False] + [True] * 9999 # dataë¼ëŠ” list ìƒì„±
+                                          # 0, 1ë²ˆì§¸ indexì˜ ê°’ì€ Falseì´ê³  ê·¸ ì´í›„ì˜ ê°’ë“¤ì€ True
+                                          # dataì˜ í•´ë‹¹ ì¸ë±ìŠ¤ ê°’ì´ Trueì´ë©´ ì†Œìˆ˜, Falseì´ë©´ ì†Œìˆ˜ê°€ ì•„ë‹˜
+    for i in range(2, int(10001 ** 0.5) + 1) : # ë°˜ë³µë¬¸ for -> 10001 ** 0.5ëŠ” ì œê³±ê·¼
+        if data[i] == True : # ì¡°ê±´ë¬¸ if -> ì†Œìˆ˜ íŒë³„
+            for j in range(2 * i, 10001, i) : # ë°˜ë³µë¬¸ for -> 2 * ië¶€í„° 10001ê¹Œì§€ ië¥¼ ê°„ê²©ìœ¼ë¡œ jì— ì°¨ë¡€ëŒ€ë¡œ ëŒ€ìž…
                 data[j] = False
-    t = int(input()) # Å×½ºÆ® È½¼ö ´ëÀÔ
-    for _ in range(t) : # ¹Ýº¹¹® for -> t¸¸Å­ ¹Ýº¹
-        n = int(input()) # °ª ´ëÀÔ
-        a = n // 2 # µÎ ¼Ò¼öÀÇ Â÷ÀÌ¸¦ °¡Àå ÀÛ°Ô ÇÏ±â À§ÇØ¼­ n // 2 
-        b = n // 2 # µÎ ¼Ò¼öÀÇ Â÷ÀÌ¸¦ °¡Àå ÀÛ°Ô ÇÏ±â À§ÇØ¼­ n // 2
-        for _ in range(10000) : # ¹Ýº¹¹® for
-            if data[a] == True and data[b] == True: # Á¶°Ç¹® if -> a¿Í b°¡ ¼Ò¼öÀÎÁö ÆÇº°
-                print(a, b) # Ãâ·Â
-                break # ÁßÁö
+    t = int(input()) # í…ŒìŠ¤íŠ¸ íšŸìˆ˜ ëŒ€ìž…
+    for _ in range(t) : # ë°˜ë³µë¬¸ for -> të§Œí¼ ë°˜ë³µ
+        n = int(input()) # ê°’ ëŒ€ìž…
+        a = n // 2 # ë‘ ì†Œìˆ˜ì˜ ì°¨ì´ë¥¼ ê°€ìž¥ ìž‘ê²Œ í•˜ê¸° ìœ„í•´ì„œ n // 2 
+        b = n // 2 # ë‘ ì†Œìˆ˜ì˜ ì°¨ì´ë¥¼ ê°€ìž¥ ìž‘ê²Œ í•˜ê¸° ìœ„í•´ì„œ n // 2
+        for _ in range(10000) : # ë°˜ë³µë¬¸ for
+            if data[a] == True and data[b] == True: # ì¡°ê±´ë¬¸ if -> aì™€ bê°€ ì†Œìˆ˜ì¸ì§€ íŒë³„
+                print(a, b) # ì¶œë ¥
+                break # ì¤‘ì§€
             a -= 1 # a = a - 1
             b += 1 # b = b + 1
-                   # a´Â 1Áõ°¡½ÃÅ°°í b´Â 1°¨¼Ò½ÃÅ°¸é a + b = n ¼º¸³
-isPrime() # ÇÔ¼ö »ìÇâ
+                   # aëŠ” 1ì¦ê°€ì‹œí‚¤ê³  bëŠ” 1ê°ì†Œì‹œí‚¤ë©´ a + b = n ì„±ë¦½
+isPrime() # í•¨ìˆ˜ ì‹¤í–‰
