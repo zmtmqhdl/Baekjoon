@@ -1,2 +1,2 @@
-n = int(input()) # °ª ´ëÀÔ
-print(n - 543) # n - 543 Ãâ·Â
+n = int(input()) # ê°’ ëŒ€ì…
+print(n - 543) # n - 543 ì¶œë ¥
