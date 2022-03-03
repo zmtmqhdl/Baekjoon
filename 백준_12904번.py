@@ -1,13 +1,12 @@
-s = list(map(str, input())) # ´ëÀÔµÈ °ªÀ» ¿ø¼Ò·Î °¡Áö´Â s¶ó´Â list»ý¼º
-t = list(map(str, input())) # ´ëÀÔµÈ °ªÀ» ¿ø¼Ò·Î °¡Áö´Â t¶ó´Â list»ý¼º
-while len(s) != len(t): # ¹Ýº¹¹® while -> lenÀ» »ç¿ëÇÏ¿© sÀÇ ±æÀÌ¿Í tÀÇ ±æÀÌ°¡ °°Áö ¾ÊÀ» µ¿¾È ¹Ýº¹
-    if t[-1] == 'A' : # Á¶°Ç¹® if, elif -> tÀÇ ¸¶Áö¸· ¹®ÀÚ°¡ 'A'ÀÏ °æ¿ì
-        t.pop() # popÀ» »ç¿ëÇÏ¿© tÀÇ ¸¶Áö¸· ¹®ÀÚ Á¦°Å
-    elif t[-1] == 'B' : # tÀÇ ¸¶Áö¸· ¹®ÀÚ°¡ 'B'ÀÏ °æ¿ì
-        t.pop() # popÀ» »ç¿ëÇÏ¿© tÀÇ ¸¶Áö¸· ¹®ÀÚ Á¦°Å
+s = list(map(str, input())) # ëŒ€ìž…ëœ ê°’ì„ ì›ì†Œë¡œ ê°€ì§€ëŠ” së¼ëŠ” listìƒì„±
+t = list(map(str, input())) # ëŒ€ìž…ëœ ê°’ì„ ì›ì†Œë¡œ ê°€ì§€ëŠ” të¼ëŠ” listìƒì„±
+while len(s) != len(t): # ë°˜ë³µë¬¸ while -> lenì„ ì‚¬ìš©í•˜ì—¬ sì˜ ê¸¸ì´ì™€ tì˜ ê¸¸ì´ê°€ ê°™ì§€ ì•Šì„ ë™ì•ˆ ë°˜ë³µ
+    if t[-1] == 'A' : # ì¡°ê±´ë¬¸ if, elif -> tì˜ ë§ˆì§€ë§‰ ë¬¸ìžê°€ 'A'ì¼ ê²½ìš°
+        t.pop() # popì„ ì‚¬ìš©í•˜ì—¬ tì˜ ë§ˆì§€ë§‰ ë¬¸ìž ì œê±°
+    elif t[-1] == 'B' : # tì˜ ë§ˆì§€ë§‰ ë¬¸ìžê°€ 'B'ì¼ ê²½ìš°
+        t.pop() # popì„ ì‚¬ìš©í•˜ì—¬ tì˜ ë§ˆì§€ë§‰ ë¬¸ìž ì œê±°
         t = t[::-1] # t
-    print(t) # Ãâ·Â
-if s == t : # Á¶°Ç¹® if, else -> s¿Í t°¡ °°À» °æ¿ì
-    print(1) # Ãâ·Â
-else : # s¿Í t°¡ ´Ù¸¦ °æ¿ì
-    print(0) # Ãâ·Â
+if s == t : # ì¡°ê±´ë¬¸ if, else -> sì™€ tê°€ ê°™ì„ ê²½ìš°
+    print(1) # ì¶œë ¥
+else : # sì™€ tê°€ ë‹¤ë¥¼ ê²½ìš°
+    print(0) # ì¶œë ¥
