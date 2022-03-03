@@ -5,7 +5,7 @@ while len(s) != len(t): # 반복문 while -> len을 사용하여 s의 길이와 
         t.pop() # pop을 사용하여 t의 마지막 문자 제거
     elif t[-1] == 'B' : # t의 마지막 문자가 'B'일 경우
         t.pop() # pop을 사용하여 t의 마지막 문자 제거
-        t = t[::-1] # t
+        t.reverse() # reverse를 사용하여 t를 뒤집음
 if s == t : # 조건문 if, else -> s와 t가 같을 경우
     print(1) # 출력
 else : # s와 t가 다를 경우
